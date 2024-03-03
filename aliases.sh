@@ -48,4 +48,4 @@ alias p3="python3"
 f () {
   w=$1
   sudo find / -name "$w" 2>/dev/null
-}"
+}
