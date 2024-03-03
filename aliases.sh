@@ -43,3 +43,9 @@ alias push="git push"
 
 # Python
 alias p3="python3"
+
+# General Use Functions
+f () {
+  w=$1
+  sudo find / -name "$w" 2>/dev/null
+}"
