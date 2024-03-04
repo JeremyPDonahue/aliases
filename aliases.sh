@@ -4,6 +4,8 @@ alias c="clear"
 alias last="cd ~-"
 alias srm="sudo rm"
 alias coffee="caffeinate -d"
+alias whereis="find / -name"
+alias lookfor="ls | grep"
 
 # Shell
 alias ep="echo $PATH"
@@ -40,6 +42,11 @@ alias gc="git commit"
 alias gl="git logs"
 alias pull="git pull"
 alias push="git push"
+alias fetch="git fetch"
+alias main="git checkout main"
+alias b="git checkout -b"
+alias gch="git checkout"
+alias opush="git push --set-upstream origin"
 
 # Python
 alias p3="python3"
@@ -48,4 +55,9 @@ alias p3="python3"
 f () {
   w=$1
   sudo find / -name "$w" 2>/dev/null
+}
+
+createfile () {
+  file=$1
+  touch $file && open $file
 }
